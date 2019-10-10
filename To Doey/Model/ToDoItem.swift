@@ -9,10 +9,6 @@
 import Foundation
 
 class ToDoItem {
-    let itemContent : String
-    let itemStatus : Bool
-    init() {
-        itemContent = ""
-        itemStatus = false
-    }
+    var itemContent : String = ""
+    var itemStatus : Bool = false
 }
