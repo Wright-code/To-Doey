@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0E4311234E7A3800EF4C73 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E4310234E7A3800EF4C73 /* ToDoItem.swift */; };
 		4A0E4314234E7D0400EF4C73 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E9F2347792E009A4BF5 /* Main.storyboard */; };
+		4AAC4DF823509BFD0032BB32 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC4DF623509BFD0032BB32 /* DataModel.xcdatamodeld */; };
 		4AE26E9A2347792E009A4BF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E992347792E009A4BF5 /* AppDelegate.swift */; };
 		4AE26E9C2347792E009A4BF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */; };
 		4AE26EA323477930009A4BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE26EA223477930009A4BF5 /* Assets.xcassets */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A0E4310234E7A3800EF4C73 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		4AAC4DF723509BFD0032BB32 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		4AE26E962347792E009A4BF5 /* To Doey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Doey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE26E992347792E009A4BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,6 @@
 		4A0E430D234E79D600EF4C73 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4A0E4310234E7A3800EF4C73 /* ToDoItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,6 +61,15 @@
 				4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4AAC4DCF234FC1940032BB32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AE26EA223477930009A4BF5 /* Assets.xcassets */,
+				4AE26EA423477930009A4BF5 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4AE26E8D2347792E009A4BF5 = {
@@ -86,9 +94,9 @@
 				4A0E430D234E79D600EF4C73 /* Model */,
 				4A0E430E234E79EB00EF4C73 /* View */,
 				4A0E430F234E79F300EF4C73 /* Controller */,
-				4AE26EA223477930009A4BF5 /* Assets.xcassets */,
-				4AE26EA423477930009A4BF5 /* LaunchScreen.storyboard */,
+				4AAC4DCF234FC1940032BB32 /* Supporting Files */,
 				4AE26EA723477930009A4BF5 /* Info.plist */,
+				4AAC4DF623509BFD0032BB32 /* DataModel.xcdatamodeld */,
 			);
 			path = "To Doey";
 			sourceTree = "<group>";
@@ -165,7 +173,7 @@
 				4A0E4314234E7D0400EF4C73 /* Main.storyboard in Sources */,
 				4AE26E9A2347792E009A4BF5 /* AppDelegate.swift in Sources */,
 				4AE26EB2234781A8009A4BF5 /* ToDoListViewController.swift in Sources */,
-				4A0E4311234E7A3800EF4C73 /* ToDoItem.swift in Sources */,
+				4AAC4DF823509BFD0032BB32 /* DataModel.xcdatamodeld in Sources */,
 				4AE26E9C2347792E009A4BF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR27PNJX93;
 				INFOPLIST_FILE = "To Doey/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR27PNJX93;
 				INFOPLIST_FILE = "To Doey/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,6 +372,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AAC4DF623509BFD0032BB32 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AAC4DF723509BFD0032BB32 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 4AAC4DF723509BFD0032BB32 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = Controller/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4AE26E8E2347792E009A4BF5 /* Project object */;
 }
