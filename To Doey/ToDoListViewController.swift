@@ -17,8 +17,8 @@ class ToDoListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-          print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-          loadItems()
+            print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+            loadItems()
     }
       
     // MARK: - Tabele View Data Source Methods
@@ -92,9 +92,8 @@ class ToDoListViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    func loadItems() {
+    func loadItems(with request : NSFetchRequest<Item> = Item.fetchRequest()) {
         
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
         do {
             itemArray = try context.fetch(request)
         } catch {
@@ -103,5 +102,21 @@ class ToDoListViewController: UITableViewController {
         
     }
 
+}
+
+    //MARK: - Search Bar Methods
+
+extension ToDoListViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        let request : NSFetchRequest<Item> = Item.fetchRequest()
+        
+        request.sortDescriptors = [NSSortDescriptor(key: "itemContent", ascending: true)]
+        request.predicate = NSPredicate(format: "itemContent CONTAINS[cd] %@", searchBar.text!)
+        loadItems(with: request)
+        tableView.reloadData()
+    }
+    
 }
  
