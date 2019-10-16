@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A0E4314234E7D0400EF4C73 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E9F2347792E009A4BF5 /* Main.storyboard */; };
 		4AAC4DF823509BFD0032BB32 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC4DF623509BFD0032BB32 /* DataModel.xcdatamodeld */; };
+		4AD2C0F223564CC5009A68BC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2C0F123564CC5009A68BC /* CategoryViewController.swift */; };
 		4AE26E9A2347792E009A4BF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E992347792E009A4BF5 /* AppDelegate.swift */; };
 		4AE26E9C2347792E009A4BF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */; };
 		4AE26EA323477930009A4BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE26EA223477930009A4BF5 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4AAC4DF723509BFD0032BB32 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		4AD2C0F123564CC5009A68BC /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		4AE26E962347792E009A4BF5 /* To Doey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Doey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE26E992347792E009A4BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		4A0E430F234E79F300EF4C73 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4AD2C0F123564CC5009A68BC /* CategoryViewController.swift */,
 				4AE26EB1234781A8009A4BF5 /* ToDoListViewController.swift */,
 				4AE26E992347792E009A4BF5 /* AppDelegate.swift */,
 				4AE26E9B2347792E009A4BF5 /* SceneDelegate.swift */,
@@ -174,6 +177,7 @@
 				4AE26E9A2347792E009A4BF5 /* AppDelegate.swift in Sources */,
 				4AE26EB2234781A8009A4BF5 /* ToDoListViewController.swift in Sources */,
 				4AAC4DF823509BFD0032BB32 /* DataModel.xcdatamodeld in Sources */,
+				4AD2C0F223564CC5009A68BC /* CategoryViewController.swift in Sources */,
 				4AE26E9C2347792E009A4BF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
