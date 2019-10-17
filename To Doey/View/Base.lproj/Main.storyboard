@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Category View Controller-->
+        <!--To-Doey-->
         <scene sceneID="Khp-J1-6dA">
             <objects>
                 <tableViewController id="fpf-vf-e04" customClass="CategoryViewController" customModule="To_Doey" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                             <outlet property="delegate" destination="fpf-vf-e04" id="btx-Si-PKC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="y1u-HL-SES">
+                    <navigationItem key="navigationItem" title="To-Doey" id="y1u-HL-SES">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ugN-hH-r8H">
                             <connections>
                                 <action selector="addCategoryButtonPressed:" destination="fpf-vf-e04" id="h8K-hl-Fi3"/>
@@ -97,7 +97,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YYq-al-mpf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
